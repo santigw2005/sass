@@ -1,0 +1,76 @@
+
+$colorMain: aqua;
+$bgColor: blue;
+$txt-color: #000;
+$border: 5px solid #666
+
+$widthContainer 800px;
+
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+
+@import 'vars';
+@import 'header';
+@import 'pages';
+@import 'media';
+
+
+div {
+    $bg-color: tomato;
+    p {
+        color: blue;
+        background: $bg-color;
+    }
+}
+
+header {
+    background-color: aqua;
+    span {
+        color: black;
+    }
+    nav {
+        background: {
+            color: $colorMain;
+            image: url();
+            position: top center;
+        };
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                a {
+                    color: red;
+                    &:hover {
+                        color: green
+                    }
+                }
+            }
+        }
+    }
+}
+
+.producto {
+    background-color: $bgColor;
+    &_titulo {
+        font: {
+            size: 30px;
+            weight: 400;
+            style: normal;
+        };
+    }
+    & &_info {
+        font-size: 16px;
+        line-height: 1;
+    }
+    & &_link {
+        color: turquoise;
+    }
+}
+
+@media (min-width: $tablet) {
+    header {
+        background-color: $bgColor;
+    }
+}
+

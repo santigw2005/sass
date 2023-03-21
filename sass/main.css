@@ -1,0 +1,39 @@
+header {
+  background-color: aqua;
+}
+header span {
+  color: black;
+}
+header nav {
+  background-color: aqua;
+  background-image: url();
+  background-position: top center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: red;
+}
+header nav ul li a:hover {
+  color: green;
+}
+
+.producto {
+  background-color: tomato;
+}
+.producto_titulo {
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+.producto .producto_info {
+  font-size: 16px;
+  line-height: 1;
+}
+.producto .producto_link {
+  color: turquoise;
+}/*# sourceMappingURL=main.css.map */
